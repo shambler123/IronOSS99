@@ -22,8 +22,8 @@
 extern int32_t powerSupplyWattageLimit;
 
 #ifdef FS2711_CHECK_BOTH_I2C_BUSES
-// Two hardware revisions: the FS2711 sits either on bus 1 (shared with the OLED) or, on newer
-// boards (S99 v1.5, S60P v1.2), on its own bus 2. Which one is found at boot is remembered here.
+// Two hardware revisions per model: the FS2711 sits either on bus 1 (shared with the OLED) or, on the
+// newer boards - S99 v1.5 and S60P v1.2 - on its own bus 2. Which one answers at boot is remembered here.
 static uint8_t selected_i2c_port = 2;
 #endif
 
